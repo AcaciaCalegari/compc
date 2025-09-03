@@ -88,3 +88,91 @@ scanf("%d", &idade);
 printf(" %d ", meiaEntrada3(carteira,idade));
 return 0;
 }
+
+
+
+
+
+//Questao4 (com carteira e com idade tava dando erro)
+#include <stdio.h>
+
+int meiaEntrada3(int carteira, int idade){
+    if (!carteira) return idade >= 65 || idade <= 21;
+    else return carteira;
+}
+
+int main(){
+
+int carteira;
+int idade;
+
+printf ("dgt ai a carteira: \n");
+scanf("%d", &carteira);
+
+printf ("dgt ai a idade: \n");
+scanf("%d", &idade);
+
+
+printf(" %d ", meiaEntrada4(carteira,idade));
+return 0;
+}
+
+
+
+
+
+
+
+//Questao5 (com carteira e com idade tava dando erro)
+#include <stdio.h>
+
+int meiaEntrada5(int carteira, int idade){
+    if (!(idade >= 65 || idade <= 21 return carteira;
+    else return 0;
+}
+
+int main(){
+
+int carteira;
+int idade;
+
+printf ("dgt ai a carteira: \n");
+scanf("%d", &carteira);
+
+printf ("dgt ai a idade: \n");
+scanf("%d", &idade);
+
+
+printf(" %d ", meiaEntrada5(carteira,idade));
+return 0;
+}
+
+
+
+
+
+//Questao6 (com carteira e com idade tava dando erro)
+#include <stdio.h>
+
+int meiaEntrada6(int carteira, int idade){
+    return idade >= 65 || idade <= 21 || carteira;
+}
+
+int main(){
+
+int carteira;
+int idade;
+
+printf ("dgt ai a carteira: \n");
+scanf("%d", &carteira);
+
+printf ("dgt ai a idade: \n");
+scanf("%d", &idade);
+
+
+printf(" %d ", meiaEntrada6(carteira,idade));
+return 0;
+}
+
+
+
