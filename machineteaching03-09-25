@@ -1,0 +1,31 @@
+//AcaciaCalegari 03/09/2025 
+//refazendo cdg do dia 02/09/2025
+//ultima questao de notas do machineteaching q estava dando erro
+
+#include <stdio.h>
+
+int situacao_final(float nota1, float nota2, float nota3) {
+    if (nota1 < 1.0 || nota2 < 1.0) {
+        return 0;
+    }
+   
+    float media = (nota1 + nota2) / 2.0;
+    if (media < 5.0) {
+        return 0;
+    }
+     
+     if (media >= 7.0) {
+        return 1;
+    }
+    
+    if (nota3 <= 4.9){
+        return 0;
+    }
+   
+    if (media + (nota3/2) < 10.0){
+        return 1;
+    }
+    else{
+        return 1;
+    }
+ }
