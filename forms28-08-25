@@ -1,0 +1,90 @@
+//lista 28/08/2025
+//google forms d classroom d compC
+
+
+
+//Questao1 (resposta faha ao identfc qm tem direito a meia entrada)
+
+#include <stdio.h>
+
+int meiaEntrada1(int carteira, int idade){
+    if (carteira) return 1;
+    else if (idade > 65 || idade < 21) return 1; //no txt a prof diz q 21 anos TEM direito
+    else return 0;
+}
+
+int main(){
+
+int carteira;
+int idade;
+
+printf ("dgt ai a carteira: \n");
+scanf("%d", &carteira);
+
+printf ("dgt ai a idade: \n");
+scanf("%d", &idade);
+
+
+printf(" %d ", meiaEntrada1(carteira,idade));
+return 0;
+}
+
+
+
+
+
+
+//Questao2 (resposta correta identifica td )
+
+#include <stdio.h>
+
+int meiaEntrada2(int carteira, int idade){
+    if (carteira) return 1;
+    else if (idade >= 65 || idade <= 21) return 1; //com o " = " abrange o 21
+    else return 0;
+}
+
+int main(){
+
+int carteira;
+int idade;
+
+printf ("dgt ai a carteira: \n");
+scanf("%d", &carteira);
+
+printf ("dgt ai a idade: \n");
+scanf("%d", &idade);
+
+
+printf(" %d ", meiaEntrada2(carteira,idade));
+return 0;
+}
+
+
+
+
+
+
+//Questao3 (com carteira e com idade tava dando erro)
+#include <stdio.h>
+
+int meiaEntrada3(int carteira, int idade){
+    if (!carteira) return idade >= 65 || idade <= 21;
+    else return 0;
+}
+
+int main(){
+
+int carteira;
+int idade;
+
+printf ("dgt ai a carteira: \n");
+scanf("%d", &carteira);
+
+printf ("dgt ai a idade: \n");
+scanf("%d", &idade);
+
+
+printf(" %d ", meiaEntrada3(carteira,idade));
+return 0;
+}
