@@ -1,11 +1,12 @@
-//testany 10/09/25
+//Acacia Calegari
 
+//parte 1 da lista
 
 //Pratik d prog: manipulação d string (Lista pdf d string)
-//09/09/2025
-//acaciacalegari
+//lista q fiz cm chat dia 09, e hj cm ajuda da prof, dia 10/09/25
 
-#include <stdio.h>
+
+#include <stdio.h> 
 #include <string.h>
 #include <ctype.h>
 
@@ -19,7 +20,7 @@ int telefone_valido(char tel[]){
     }
 }
 
-// Função 2 (permanece igual) 
+// 2 
 
 
 /* aki eh do chat
@@ -41,7 +42,7 @@ int extrair_ddd( char telefone[]) {
 
 int extrair_ddd( char telefone[]) {
     int tamanho = strlen(telefone);
-    char ddd[3];
+    char ddd[3]; //temq dxar 3 pq temq ter o espaço do \0 , e 1 espaço eh p se tiver ok, e o outro espaço eh se ñ. por isso 1 e 0 q vms definir ali no if
     
     if (tamanho == 10 || tamanho == 11) {
 
