@@ -1,0 +1,78 @@
+//testany 10/09/25
+
+
+//Pratik d prog: manipulação d string (Lista pdf d string)
+//09/09/2025
+//acaciacalegari
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int telefone_valido(char tel[]){
+  
+    int tamanho = strlen(tel);
+    if (tamanho >= 8 && tamanho <= 11){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+
+// Função 2 (permanece igual) 
+
+
+/* aki eh do chat
+
+int extrair_ddd( char telefone[]) {
+    int tamanho = strlen(telefone);
+    int ddd;
+    
+    if (tamanho == 10 || tamanho == 11) {
+
+        sscanf(telefone, "%2d", &ddd);
+        return ddd;
+    }
+    
+    return 0;
+}*/
+
+//aki eh da prof
+
+int extrair_ddd( char telefone[]) {
+    int tamanho = strlen(telefone);
+    char ddd[3];
+    
+    if (tamanho == 10 || tamanho == 11) {
+
+        ddd[0]=telefone[0];
+        ddd[1]=telefone[1];
+        ddd[2]='\0';
+        return atoi(ddd);
+    }
+    
+    return 0;
+}
+
+
+// Função principal
+
+
+int main() {
+    printf("=== TESTE DE TELEFONES ===\n\n");
+    
+    char tel1[]="21999887769";
+    char tel2[]="2188776977";
+    char tel3[]="999887769";
+    char tel4[]="22334455";
+    char tel5[]="334455";
+    char tel6[]="21999887769999"; 
+
+    printf("testei com: %s o resultado foi %d: e o DDD é: %d\n", tel1, telefone_valido(tel1), extrair_ddd(tel1));
+    printf("testei com: %s o resultado foi %d: e o DDD é: %d\n", tel2, telefone_valido(tel2), extrair_ddd(tel2));
+    printf("testei com: %s o resultado foi %d: e o DDD é: %d\n", tel3, telefone_valido(tel3), extrair_ddd(tel3));
+    printf("testei com: %s o resultado foi %d: e o DDD é: %d\n", tel4, telefone_valido(tel4), extrair_ddd(tel4));
+    printf("testei com: %s o resultado foi %d: e o DDD é: %d\n", tel5, telefone_valido(tel5), extrair_ddd(tel5));
+    printf("testei com: %s o resultado foi %d: e o DDD é: %d\n", tel6, telefone_valido(tel6), extrair_ddd(tel6));
+    return 0;
+}
