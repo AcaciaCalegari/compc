@@ -11,14 +11,14 @@
 
 int fibonacci(int n) {
 // Casos base
-if (n == 0) return 0;
-if (n == 1) return 1;
+  if (n == 0) return 0;
+  if (n == 1) return 1;
 
 // Caso recursivo
 return fibonacci(n-1) + fibonacci(n-2);
 }
 
 int main() {
-printf("fibonacci = %d\n", fibonacci(41)); // 120
-return 0;
+  printf("fibonacci = %d\n", fibonacci(41)); 
+    return 0;
 }
