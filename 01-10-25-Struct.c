@@ -1,3 +1,6 @@
+//exemplo 1 do slide d structs
+//representa um ponto em um plano 2D, que possui coordenadas x e y
+
 #include <stdio.h>
 
 // 1. Declaração da struct Ponto
