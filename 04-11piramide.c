@@ -2,6 +2,8 @@
 //parece uma piramide
 //padrao triangular - slide d matrizes e lacos
 
+#include <stdio.h> 
+
     int main() {
     int i, j;
     
